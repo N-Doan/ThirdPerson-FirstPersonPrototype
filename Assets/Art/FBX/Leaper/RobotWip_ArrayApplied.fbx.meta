@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 772d4eacf2bb9964db335473b0d9304a
+ModelImporter:
+  serializedVersion: 22102
+  internalIDToNameTable:
+  - first:
+      74: 3263695080375642362
+    second: IK Target.002|ANIMARM1Active
+  - first:
+      74: 5210080750097038084
+    second: IK Target.002|ANIMARM1Idle
+  - first:
+      74: -5518289430563496002
+    second: IK Target.002|ANIMARM1Jump
+  - first:
+      74: 7706092673304984205
+    second: IK Target.002|ANIMARM1Retract
+  - first:
+      74: -2881096460991573772
+    second: IK Target.002|ANIMARM2Active
+  - first:
+      74: -9192609985899317862
+    second: IK Target.002|ANIMARM2Idle
+  - first:
+      74: -1746713091120895464
+    second: IK Target.002|ANIMARM2Jump
+  - first:
+      74: -5631294764870365469
+    second: IK Target.002|ANIMARM2Retract
+  - first:
+      74: -1811510221809785905
+    second: IK Target.002|ANIMARM3Active
+  - first:
+      74: -4639730972791063955
+    second: IK Target.002|ANIMARM3Idle
+  - first:
+      74: -8303248794979450426
+    second: IK Target.002|ANIMARM3Jump
+  - first:
+      74: -5771296760599696826
+    second: IK Target.002|ANIMARM3Retract
+  - first:
+      74: -296532990136414008
+    second: IK Target|ANIMARM1Active
+  - first:
+      74: -552614173071424219
+    second: IK Target|ANIMARM1Idle
+  - first:
+      74: -4071494742253109047
+    second: IK Target|ANIMARM1Jump
+  - first:
+      74: 6841601516198633381
+    second: IK Target|ANIMARM1Retract
+  - first:
+      74: -8079251774395322121
+    second: IK Target|ANIMARM2Active
+  - first:
+      74: -1700948045261406012
+    second: IK Target|ANIMARM2Idle
+  - first:
+      74: 7117866082069355123
+    second: IK Target|ANIMARM2Jump
+  - first:
+      74: -5809172775706482070
+    second: IK Target|ANIMARM2Retract
+  - first:
+      74: -3361334773845003106
+    second: IK Target|ANIMARM3Active
+  - first:
+      74: 3511139499600963227
+    second: IK Target|ANIMARM3Idle
+  - first:
+      74: 4872885281002711201
+    second: IK Target|ANIMARM3Jump
+  - first:
+      74: 6697384128340251541
+    second: IK Target|ANIMARM3Retract
+  - first:
+      74: -2197092602928494332
+    second: IK Target.001|ANIMARM1Active
+  - first:
+      74: 1273854476917232740
+    second: IK Target.001|ANIMARM1Idle
+  - first:
+      74: 1149805418367022919
+    second: IK Target.001|ANIMARM1Jump
+  - first:
+      74: -2383010353202014832
+    second: IK Target.001|ANIMARM1Retract
+  - first:
+      74: 451786178729085290
+    second: IK Target.001|ANIMARM2Active
+  - first:
+      74: -206764683224776965
+    second: IK Target.001|ANIMARM2Idle
+  - first:
+      74: -4200424754050833710
+    second: IK Target.001|ANIMARM2Jump
+  - first:
+      74: 7943749712693818469
+    second: IK Target.001|ANIMARM2Retract
+  - first:
+      74: 968826789640865375
+    second: IK Target.001|ANIMARM3Active
+  - first:
+      74: -6670503508462484522
+    second: IK Target.001|ANIMARM3Idle
+  - first:
+      74: 1977880207513275394
+    second: IK Target.001|ANIMARM3Jump
+  - first:
+      74: -8503326360941658144
+    second: IK Target.001|ANIMARM3Retract
+  - first:
+      74: 7203984704467845205
+    second: Armature.004|ANIMARM1Active
+  - first:
+      74: -3705940963235213604
+    second: Armature.004|ANIMARM1Idle
+  - first:
+      74: 4195651579031495140
+    second: Armature.004|ANIMARM1Jump
+  - first:
+      74: -8995295542977493893
+    second: Armature.004|ANIMARM1Retract
+  - first:
+      74: -8976629613698332553
+    second: Armature.004|ANIMARM2Active
+  - first:
+      74: 2563223931091429069
+    second: Armature.004|ANIMARM2Idle
+  - first:
+      74: 3329473808830944311
+    second: Armature.004|ANIMARM2Jump
+  - first:
+      74: -3915936296389927211
+    second: Armature.004|ANIMARM2Retract
+  - first:
+      74: -1604104742635611100
+    second: Armature.004|ANIMARM3Active
+  - first:
+      74: 4509740022679599921
+    second: Armature.004|ANIMARM3Idle
+  - first:
+      74: -3060816030203639036
+    second: Armature.004|ANIMARM3Jump
+  - first:
+      74: 718987027417995482
+    second: Armature.004|ANIMARM3Retract
+  - first:
+      74: 2871846695278699425
+    second: Armature.004|ANIMIdle
+  - first:
+      74: -8045351376666998539
+    second: Armature.004|ANIMJump
+  - first:
+      74: 2537498529118351935
+    second: Armature.004|ANIMLand
+  - first:
+      74: 1458392527382531979
+    second: Armature.004|ANIMRetract
+  - first:
+      74: -3559708060332079931
+    second: Armature.004|ANIMActivation
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
