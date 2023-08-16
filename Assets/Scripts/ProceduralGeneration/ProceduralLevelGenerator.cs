@@ -560,14 +560,9 @@ public class ProceduralLevelGenerator : MonoBehaviour
     //use randomized depth-first search to find a path between the start and end point and return the result
     private sePath createPathBetween(int[] start, int[] end)
     {
+        //init array of false
         bool[,] visited = new bool[procLevelLayout.GetLength(0), procLevelLayout.GetLength(1)];
-        for (int i = 0; i < visited.GetLength(0); i++)
-        {
-            for (int j = 0; j < visited.GetLength(1); j++)
-            {
-                visited[i, j] = false;
-            }
-        }
+
         Queue<int[]> path = new Queue<int[]>();
         path = DFS(start, end, path, visited);
         sePath p;

@@ -610,6 +610,8 @@ MonoBehaviour:
   - {fileID: 3006708500243768845, guid: d2738857db0280040ae78c5f695739a8, type: 3}
   - {fileID: 5368081996847716179, guid: c37a7ea509fdf0d4d9c9475ed94e7138, type: 3}
   gate: {fileID: 8303968085607878213, guid: a59312b3c0e11a64b94eca162d78706c, type: 3}
+  gridLength: 50
+  gridWidth: 50
 --- !u!4 &1155483892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5126017339826277728, guid: 6ee4140233b56fc41a4fa9df234f99ab, type: 3}

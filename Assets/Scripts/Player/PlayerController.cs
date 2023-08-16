@@ -324,7 +324,7 @@ public class PlayerController : MonoBehaviour
         //Store velocity before dash
         Vector3 preDash = rb.velocity;
         rb.velocity = new Vector3(0.0f, rb.velocity.y, 0.0f);
-            Vector3 totalDash = new Vector3(0,0,0);
+        Vector3 totalDash = Vector3.zero;
         if(Dir != null)
         {
             while (Dir.Length > 0)

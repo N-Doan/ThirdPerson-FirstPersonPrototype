@@ -7,6 +7,8 @@ public class LeaperAnimController : MonoBehaviour
 {
     [SerializeField]
     private List<Animator> animators;
+    [SerializeField]
+    private EnemyAnimationController animController;
     // Start is called before the first frame update
 
     void Start()
@@ -20,7 +22,6 @@ public class LeaperAnimController : MonoBehaviour
         {
             anim.SetBool("Activated", true);
         }
-
     }
 
     public void jumping()
@@ -29,7 +30,10 @@ public class LeaperAnimController : MonoBehaviour
         {
             anim.SetBool("IsJumping", true);
         }
-
+        if (animController != null)
+        {
+            animController.disableIK();
+        }
     }
 
     public void landing()
@@ -37,6 +41,11 @@ public class LeaperAnimController : MonoBehaviour
         foreach (Animator anim in animators)
         {
             anim.SetBool("IsJumping", false);
+        }
+        if(animController != null)
+        {
+            animController.enableIK();
+            animController.calculateArmPositions();
         }
 
     }

@@ -14,6 +14,7 @@ public class LChaseAIProperties : ChaseAIProperties
     [Header("Intervals and Variances")]
     public float jumpIntervals;
     public float jumpIntervalsVariance;
+    public float landingOffset = 1.0f;
 
     [Header("Terrain LayerMask")]
     public LayerMask terrainLayerMask;

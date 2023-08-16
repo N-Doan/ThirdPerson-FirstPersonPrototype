@@ -363,32 +363,32 @@ public class LChasing : FSMState
             //Debug.Log("VELOCITY");
             return hitGround(colhit);
         }*/
-        if(Physics.Raycast(ai.rb.position, Vector3.down, out colhit, 1.0f + activationHeight, chaseAIProperties.terrainLayerMask))
+        if(Physics.Raycast(ai.rb.position, Vector3.down, out colhit, chaseAIProperties.landingOffset + activationHeight, chaseAIProperties.terrainLayerMask))
         {
             //Debug.Log("DOWN");
             return hitGround(colhit);
         }
-        else if (Physics.Raycast(ai.rb.position, Vector3.left, out colhit, 1.0f + activationHeight, chaseAIProperties.terrainLayerMask))
+        else if (Physics.Raycast(ai.rb.position, Vector3.left, out colhit, chaseAIProperties.landingOffset + activationHeight, chaseAIProperties.terrainLayerMask))
         {
             //Debug.Log("LEFT");
             return hitGround(colhit);
         }
-        else if (Physics.Raycast(ai.rb.position, Vector3.up, out colhit, 1.0f + activationHeight, chaseAIProperties.terrainLayerMask))
+        else if (Physics.Raycast(ai.rb.position, Vector3.up, out colhit, chaseAIProperties.landingOffset + activationHeight, chaseAIProperties.terrainLayerMask))
         {
             //Debug.Log("UP");
             return hitGround(colhit);
         }
-        else if (Physics.Raycast(ai.rb.position, Vector3.right, out colhit, 1.0f + activationHeight, chaseAIProperties.terrainLayerMask))
+        else if (Physics.Raycast(ai.rb.position, Vector3.right, out colhit, chaseAIProperties.landingOffset + activationHeight, chaseAIProperties.terrainLayerMask))
         {
             //Debug.Log("RIGH");
             return hitGround(colhit);
         }
-        else if (Physics.Raycast(ai.rb.position, Vector3.forward, out colhit, 1.0f + activationHeight, chaseAIProperties.terrainLayerMask))
+        else if (Physics.Raycast(ai.rb.position, Vector3.forward, out colhit, chaseAIProperties.landingOffset + activationHeight, chaseAIProperties.terrainLayerMask))
         {
             //Debug.Log("FORWARD");
             return hitGround(colhit);
         }
-        else if (Physics.Raycast(ai.rb.position, Vector3.back, out colhit, 1.0f + activationHeight, chaseAIProperties.terrainLayerMask))
+        else if (Physics.Raycast(ai.rb.position, Vector3.back, out colhit, chaseAIProperties.landingOffset + activationHeight, chaseAIProperties.terrainLayerMask))
         {
             //Debug.Log("BACK");
             return hitGround(colhit);
