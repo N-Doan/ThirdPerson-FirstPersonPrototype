@@ -612,6 +612,11 @@ MonoBehaviour:
   gate: {fileID: 8303968085607878213, guid: a59312b3c0e11a64b94eca162d78706c, type: 3}
   gridLength: 50
   gridWidth: 50
+--- !u!224 &1138614560 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7494477036380217245, guid: e244707836861ff4c86ca97f62317a70, type: 3}
+  m_PrefabInstance: {fileID: 1804889284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1155483892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5126017339826277728, guid: 6ee4140233b56fc41a4fa9df234f99ab, type: 3}
@@ -1152,6 +1157,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9199692319905563093, guid: c37a7ea509fdf0d4d9c9475ed94e7138, type: 3}
   m_PrefabInstance: {fileID: 1425550390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2128542321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5304861181017051652, guid: 6ee4140233b56fc41a4fa9df234f99ab, type: 3}
+  m_PrefabInstance: {fileID: 492601727}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7405330428320280438
 Transform:
   m_ObjectHideFlags: 0
@@ -1183,3 +1193,70 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &8830691925755194139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325139, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830691923850325148, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2128542321}
+    - target: {fileID: 8830691923850325148, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: playerUIIndicator
+      value: 
+      objectReference: {fileID: 1138614560}
+    - target: {fileID: 8830691923850325149, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
+      propertyPath: m_Name
+      value: UIMinimapCamera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 160d8ff7e255c604a832ae8d0bbb7089, type: 3}
