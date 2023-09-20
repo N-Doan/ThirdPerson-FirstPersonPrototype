@@ -208,7 +208,6 @@ public class PlayerController : MonoBehaviour
                 {
                     //rb.AddForce(-cameraT.transform.forward * moveForce, ForceMode.Acceleration);
                     unclampedMoveForce += (-cameraT.transform.forward);
-
                 }
                 if (Input.GetKey(KeyCode.D))
                 {
@@ -387,6 +386,7 @@ public class PlayerController : MonoBehaviour
 
             if (dashed)
             {
+                EventManager.instance.OnPlayerDash(gameObject.transform.GetInstanceID(), true);
                 totalDash = new Vector3(totalDash.x, 0, totalDash.z);
                 dashesRemaining--;
                 StartCoroutine(dashCooldown());
@@ -647,6 +647,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator clampVelocity(Vector3 unclampedMoveForce)
     {
         yield return new WaitForFixedUpdate();
+
         //Vector3 clamped = Vector3.ClampMagnitude(new Vector3(rb.velocity.x, 0, rb.velocity.z), maxVelocity);
         //rb.velocity = new Vector3(clamped.x, rb.velocity.y, clamped.z);
         Vector3 clamped = Vector3.ClampMagnitude(new Vector3(unclampedMoveForce.x, 0, unclampedMoveForce.z), maxVelocity);
@@ -699,6 +700,7 @@ public class PlayerController : MonoBehaviour
     {
         //maxVelocity = maxDashVelocity;
         yield return new WaitForSeconds(0.25f);
+        EventManager.instance.OnPlayerDash(gameObject.transform.GetInstanceID(), false);
         //rb.velocity = preDashVelocity;
         StartCoroutine(lerpVelocity(preDashVelocity));
         yield return null;

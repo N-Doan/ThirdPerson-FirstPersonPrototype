@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour
 {
+    [SerializeField]
+    private PhysicMaterial playerMat;
+
     public bool grounded = false;
     public bool collisionHappened = false;
     private int maxJumps;
     private float playerRadius;
+    float initFriction;
     private void Start()
     {
         maxJumps = GetComponentInParent<PlayerController>().maxJumps;
         playerRadius = gameObject.GetComponent<SphereCollider>().radius;
+        initFriction = playerMat.dynamicFriction;
     }
     private void OnCollisionStay(Collision collision)
     {
@@ -24,16 +29,22 @@ public class GroundCheck : MonoBehaviour
                 if (hit.collider.CompareTag("Terrain"))
                 {
                     grounded = true;
+                    playerMat.dynamicFriction = initFriction;
+                    playerMat.staticFriction = initFriction;
                 }
             }
             else
             {
                 grounded = false;
+                playerMat.dynamicFriction = 0;
+                playerMat.staticFriction = 0;
             }
         }
         else
         {
             grounded = false;
+            playerMat.dynamicFriction = 0;
+            playerMat.staticFriction = 0;
             //Debug.Log("Not Grounded!");
         }
     }
@@ -65,6 +76,8 @@ public class GroundCheck : MonoBehaviour
         else
         {
             grounded = false;
+            playerMat.dynamicFriction = 0;
+            playerMat.staticFriction = 0;
         }
         //the ray used to confirm we're grounded;
         Debug.DrawRay(transform.position, new Vector3(0.0f,-1.0f,0.0f));

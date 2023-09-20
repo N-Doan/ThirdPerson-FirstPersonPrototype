@@ -25,6 +25,7 @@ public class EventManager : MonoBehaviour
     public event Action<int> EOnFirstPersonDisabled;
     public event Action<int, Collision> EOnBulletCollision;
     public event Action<int, float> EOnPlayerDamageTaken;
+    public event Action<int, bool> EOnPlayerDash;
 
     //METHODS
     public void OnFirstPersonEnabled(int instanceID)
@@ -42,6 +43,11 @@ public class EventManager : MonoBehaviour
     public void OnPlayerDamageTaken(int instanceID, float damageVal)
     {
         EOnPlayerDamageTaken(instanceID, damageVal);
+    }
+
+    public void OnPlayerDash(int insttanceID, bool toggle)
+    {
+        EOnPlayerDash(insttanceID, toggle);
     }
 
 }
